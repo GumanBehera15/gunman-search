@@ -1,0 +1,285 @@
+/* GUNMAN HOMEPAGE */
+
+#main_guman\/index .title {
+    background: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-align: center !important;
+    margin: 40px auto 25px !important;
+}
+
+#main_guman\/index .title h1 {
+    display: block !important;
+    width: auto !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 64px !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    letter-spacing: -3px !important;
+
+    color: #4f7cff !important;
+
+    background: none !important;
+    background-image: none !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+#main_guman\/index .title h1::before,
+#main_guman\/index .title h1::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* FINAL GUNMAN LOGO FIX */
+
+#main_guman\/index .title h1 {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    width: auto !important;
+    height: auto !important;
+
+    margin: 0 auto !important;
+    padding: 0 !important;
+
+    font-size: 64px !important;
+    font-weight: 900 !important;
+    line-height: 1.1 !important;
+    letter-spacing: -3px !important;
+
+    color: #4f7cff !important;
+    -webkit-text-fill-color: #4f7cff !important;
+
+    text-indent: 0 !important;
+    text-shadow: none !important;
+
+    background: none !important;
+    background-image: none !important;
+
+    position: relative !important;
+}
+
+#main_guman\/index .title h1::before,
+#main_guman\/index .title h1::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* =========================================
+   GUNMAN SEARCH BOX
+   ========================================= */
+
+#main_guman\/index #search {
+    width: min(900px, 90vw) !important;
+    margin: 15px auto 0 !important;
+}
+
+#main_guman\/index #search_header {
+    width: 100% !important;
+}
+
+#main_guman\/index #search_view {
+    width: 100% !important;
+}
+
+#main_guman\/index .search_box {
+    position: relative !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+/* Main input */
+
+#main_guman\/index #q {
+    width: 100% !important;
+    height: 64px !important;
+
+    box-sizing: border-box !important;
+
+    padding: 0 125px 0 24px !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 18px !important;
+
+    background: #2b2e36 !important;
+
+    color: #ffffff !important;
+
+    font-size: 18px !important;
+    font-weight: 400 !important;
+
+    outline: none !important;
+
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.20),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.02) !important;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease !important;
+}
+
+#main_guman\/index #q::placeholder {
+    color: #8b909c !important;
+    opacity: 1 !important;
+}
+
+/* Search box focus */
+
+#main_guman\/index #q:focus {
+    background: #30333d !important;
+    border-color: #4f7cff !important;
+
+    box-shadow:
+        0 0 0 4px rgba(79, 124, 255, 0.12),
+        0 12px 35px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Search button */
+
+#main_guman\/index #send_search {
+    position: absolute !important;
+    right: 7px !important;
+    top: 7px !important;
+
+    width: 50px !important;
+    height: 50px !important;
+
+    min-width: 50px !important;
+    min-height: 50px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: none !important;
+    border-radius: 14px !important;
+
+    background: #4f7cff !important;
+    color: #ffffff !important;
+
+    cursor: pointer !important;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease,
+        box-shadow 0.15s ease !important;
+}
+
+#main_guman\/index #send_search:hover {
+    background: #638cff !important;
+
+    transform: translateY(-1px) !important;
+
+    box-shadow:
+        0 6px 18px rgba(79, 124, 255, 0.30) !important;
+}
+
+#main_guman\/index #send_search:active {
+    transform: translateY(0) scale(0.97) !important;
+}
+
+/* Search icon */
+
+#main_guman\/index #send_search svg {
+    width: 24px !important;
+    height: 24px !important;
+}
+
+/* Clear button */
+
+#main_guman\/index #clear_search {
+    position: absolute !important;
+    right: 65px !important;
+    top: 7px !important;
+
+    width: 45px !important;
+    height: 50px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    border: none !important;
+    background: transparent !important;
+
+    color: #8b909c !important;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    #main_guman\/index #search {
+        width: calc(100% - 32px) !important;
+    }
+
+    #main_guman\/index #q {
+        height: 56px !important;
+
+        padding-left: 18px !important;
+        padding-right: 105px !important;
+
+        font-size: 16px !important;
+
+        border-radius: 15px !important;
+    }
+
+    #main_guman\/index #send_search {
+        width: 44px !important;
+        height: 44px !important;
+
+        min-width: 44px !important;
+        min-height: 44px !important;
+
+        right: 6px !important;
+        top: 6px !important;
+
+        border-radius: 12px !important;
+    }
+
+    #main_guman\/index #clear_search {
+        right: 55px !important;
+        top: 6px !important;
+    }
+}
+
+/* Center Gunman Search */
+.index {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index .title {
+    width: 100%;
+    text-align: center;
+}
+
+.index .search_box {
+    width: min(700px, 90vw);
+    margin: 0 auto;
+}
+	
+/* Keep autocomplete suggestions below the search box */
+.autocomplete {
+    top: 100% !important;
+    bottom: auto !important;
+    margin-top: 6px;
+    z-index: 1000;
+}

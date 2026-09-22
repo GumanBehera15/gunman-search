@@ -1,0 +1,103 @@
+use_default_settings: true
+
+general:
+  debug: false
+  instance_name: "Gunman Search"
+  privacypolicy_url: ""
+  donation_url: true
+  contact_url: ""
+  enable_metrics: true
+  open_metrics: ""
+
+brand:
+  docs_url: ""
+  public_instances: ""
+  wiki_url: ""
+  issue_url: ""
+  custom:
+    links:
+      "About Gunman Search": "/info/en/about"
+      "Privacy": "/info/privacy"
+      "Contact": "/info/contact"
+      "Donate": "/info/en/donate"
+      "Search Syntax": "/info/en/search-syntax"
+  pwa_colors:
+    theme_color_light: "#111111"
+    background_color_light: "#ffffff"
+    theme_color_dark: "#111111"
+    background_color_dark: "#1b1b1f"
+    theme_color_black: "#000000"
+    background_color_black: "#000000"
+
+search:
+  safe_search: 0
+  autocomplete: "duckduckgo"
+  autocomplete_min: 4
+  favicon_resolver: ""
+  default_lang: "auto"
+  ban_time_on_fail: 5
+  max_ban_time_on_fail: 120
+  formats:
+    - html
+    - json
+
+server:
+    secret_key: "CHANGE_ME_IN_ENV"
+  limiter: true
+  image_proxy: true
+  public_instance: true
+  method: "GET"
+  default_http_headers:
+    X-Content-Type-Options: nosniff
+    X-Download-Options: noopen
+    X-Robots-Tag: noindex, nofollow
+    Referrer-Policy: no-referrer
+
+
+ui:
+  static_path: "/etc/searxng/static"
+  templates_path: "/etc/searxng/templates"
+  default_locale: "en"
+  default_theme: "guman"
+  query_in_title: true
+  center_alignment: false
+  search_on_category_select: true
+  hotkeys: default
+  url_formatting: pretty
+  results_on_new_tab: false
+
+categories_as_tabs:
+  general:
+  images:
+  videos:
+  news:
+  map:
+  it:
+  science:
+
+engines:
+  - name: google
+    disabled: false
+  - name: bing
+    disabled: false
+  - name: brave
+    disabled: false
+  - name: duckduckgo
+    disabled: false
+  - name: github
+    disabled: false
+  - name: mdn
+    disabled: false
+  - name: hackernews
+    disabled: false
+  - name: arxiv
+    disabled: false
+  - name: pubmed
+    disabled: false
+  - name: semantic scholar
+    disabled: false
+  - name: google scholar
+    disabled: false
+
+valkey:
+  url: valkey://valkey:6379/0
