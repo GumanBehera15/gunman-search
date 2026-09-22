@@ -42,7 +42,7 @@ search:
     - json
 
 server:
-    secret_key: "CHANGE_ME_IN_ENV"
+  secret_key: "CHANGE_ME_IN_ENV"
   limiter: true
   image_proxy: true
   public_instance: true
